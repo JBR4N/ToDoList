@@ -1,18 +1,6 @@
 {
   "todolist": [
     {
-      "title": "Finish project report",
-      "description": "Complete the final draft of the project report",
-      "date": "2025-02-22",
-      "id": "a2a4"
-    },
-    {
-      "title": "Call the plumber",
-      "description": "Fix the leaking sink in the kitchen",
-      "date": "2025-02-23",
-      "id": "4a3c"
-    },
-    {
       "title": "Schedule dentist appointment",
       "description": "Routine check-up and cleaning",
       "date": "2025-02-24",

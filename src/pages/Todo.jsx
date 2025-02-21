@@ -13,7 +13,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Todo = () => {
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState({});
 
   const { id } = useParams();
 
@@ -31,6 +31,11 @@ const Todo = () => {
     }
   };
 
+  const handleEdit = () => {
+    console.log("Navigating to edit with todo:", todo); // Log the data being passed
+    navigate(`/editTodo/${id}`, { state: { todo } });
+  };
+
   useEffect(() => {
     const fetchTodo = async () => {
       try {
@@ -44,7 +49,7 @@ const Todo = () => {
     };
 
     fetchTodo();
-  }, []);
+  }, [id]);
 
   console.log(todo);
 
@@ -55,9 +60,22 @@ const Todo = () => {
           <CardHeader>
             <CardTitle className="flex justify-between">
               <h1>{todo.title}</h1>{" "}
-              <Button onClick={handleDelete} variant="destructive" className>
-                Delete To Do
-              </Button>
+              <div className="flex gap-2">
+                <Button
+                  onClick={handleDelete}
+                  variant="destructive"
+                  className="button hover:font-bold"
+                >
+                  Delete To Do
+                </Button>
+                <Button
+                  onClick={handleEdit}
+                  variant="outline"
+                  className="button hover:border-black"
+                >
+                  ✏️ Edit
+                </Button>{" "}
+              </div>
             </CardTitle>
             <CardDescription>{todo.date}</CardDescription>
           </CardHeader>

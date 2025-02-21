@@ -16,6 +16,7 @@ const router = createBrowserRouter(
       <Route index element={<Todos />} />
       <Route path="/todo/:id" element={<Todo />} />
       <Route path="/add-todo" element={<AddTodo />} />
+      <Route path="/editTodo/:id" element={<AddTodo />} />
     </Route>
   )
 );
