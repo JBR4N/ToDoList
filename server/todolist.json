@@ -1,0 +1,29 @@
+{
+  "todolist": [
+    {
+      "title": "Buy groceries",
+      "description": "Milk, Bread, Eggs, Butter",
+      "date": "2025-02-21"
+    },
+    {
+      "title": "Finish project report",
+      "description": "Complete the final draft of the project report",
+      "date": "2025-02-22"
+    },
+    {
+      "title": "Call the plumber",
+      "description": "Fix the leaking sink in the kitchen",
+      "date": "2025-02-23"
+    },
+    {
+      "title": "Schedule dentist appointment",
+      "description": "Routine check-up and cleaning",
+      "date": "2025-02-24"
+    },
+    {
+      "title": "Plan weekend trip",
+      "description": "Book hotel and plan itinerary for the weekend trip",
+      "date": "2025-02-25"
+    }
+  ]
+}
