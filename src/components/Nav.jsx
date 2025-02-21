@@ -13,7 +13,7 @@ const Nav = () => {
         </li>
         <li>
           {" "}
-          <Link to={"/"} className="text-2xl hover:text-pink-500">
+          <Link to={"/add-todo"} className="text-2xl hover:text-pink-500">
             Add to Do's
           </Link>
         </li>
